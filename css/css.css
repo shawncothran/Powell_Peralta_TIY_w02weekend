@@ -422,7 +422,6 @@ header {
           font-size: 35px;
           transition: opacity 0.4s; }
           header nav.social section div a.subs:hover {
-            transition: opacity 0.4s;
             opacity: 1; }
       header nav.social section .fb {
         background: #445897; }
@@ -469,7 +468,6 @@ header {
       .wrapper nav.pagenav a:last-child {
         margin-right: 0; }
       .wrapper nav.pagenav a:hover {
-        transition: color, background-color 0.6s;
         color: #B4292E;
         background: #fff; }
   .wrapper div.heroimg {
@@ -520,7 +518,6 @@ header {
       background-color: #fff;
       transition: background-color 0.6s; }
       .wrapper div.buttons button:hover {
-        transition: background-color 0.6s;
         background-color: #B4292E; }
   .wrapper article.post {
     float: left;
@@ -558,7 +555,6 @@ header {
       text-align: center;
       transition: color, background-color 0.6s; }
       .wrapper article.post a:hover {
-        transition: color, background-color 0.6s;
         color: #fff;
         background-color: #B4292E; }
   .wrapper #skateboarders {
@@ -577,11 +573,43 @@ header {
       line-height: 45px;
       font-size: 47px;
       color: #fff;
+      opacity: 1;
       text-decoration: none;
       text-transform: uppercase;
       position: absolute;
       top: 50%;
-      transform: translateY(-50%); }
+      transform: translateY(-50%);
+      transition: opacity 0.4s; }
+    .wrapper #skateboarders div.lance, .wrapper #skateboarders div.rodney, .wrapper #skateboarders div.steve, .wrapper #skateboarders div.tommy {
+      -webkit-box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
+      -moz-box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
+      box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
+      position: relative;
+      border: 5px solid #fff;
+      background-repeat: no-repeat;
+      z-index: 10;
+      transition: box-shadow 0.4s, transform 0.4s; }
+      .wrapper #skateboarders div.lance p, .wrapper #skateboarders div.rodney p, .wrapper #skateboarders div.steve p, .wrapper #skateboarders div.tommy p {
+        padding: 5px;
+        height: 90px;
+        width: 100%;
+        top: auto;
+        bottom: 0;
+        opacity: 0;
+        line-height: 25px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+        transition: opacity 0.4s; }
+      .wrapper #skateboarders div.lance:hover, .wrapper #skateboarders div.rodney:hover, .wrapper #skateboarders div.steve:hover, .wrapper #skateboarders div.tommy:hover {
+        transform: translateY(-50px);
+        -webkit-box-shadow: 0px 50px 0px 0px rgba(255, 255, 255, 0.3);
+        -moz-box-shadow: 0px 50px 0px 0px rgba(255, 255, 255, 0.3);
+        box-shadow: 0px 50px 0px 0px rgba(255, 255, 255, 0.3); }
+        .wrapper #skateboarders div.lance:hover p, .wrapper #skateboarders div.rodney:hover p, .wrapper #skateboarders div.steve:hover p, .wrapper #skateboarders div.tommy:hover p {
+          opacity: 1; }
+        .wrapper #skateboarders div.lance:hover a, .wrapper #skateboarders div.rodney:hover a, .wrapper #skateboarders div.steve:hover a, .wrapper #skateboarders div.tommy:hover a {
+          opacity: 0; }
     .wrapper #skateboarders div.wrap {
       float: left;
       display: block;
@@ -594,15 +622,9 @@ header {
         display: block;
         margin-right: 3.57866%;
         width: 48.21067%;
-        -webkit-box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
-        -moz-box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
-        box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
-        position: relative;
-        border: 5px solid #fff;
         height: 232px;
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/sk8er-4.png);
+        background: url(../assets/sk8er-4.png);
         margin-bottom: 10px;
-        background-repeat: no-repeat;
         background-position: -130px -10px; }
         .wrapper #skateboarders div.wrap div.lance:last-child {
           margin-right: 0; }
@@ -611,15 +633,9 @@ header {
         display: block;
         margin-right: 3.57866%;
         width: 48.21067%;
-        -webkit-box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
-        -moz-box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
-        box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
         margin-right: 0;
-        position: relative;
-        border: 5px solid #fff;
         height: 232px;
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/sk8er-3.png);
-        background-repeat: no-repeat; }
+        background: url(../assets/sk8er-3.png); }
         .wrapper #skateboarders div.wrap div.rodney:last-child {
           margin-right: 0; }
       .wrapper #skateboarders div.wrap div.steve {
@@ -627,15 +643,9 @@ header {
         display: block;
         margin-right: 3.57866%;
         width: 100%;
-        -webkit-box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
-        -moz-box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
-        box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
         padding: 0 120px;
-        position: relative;
-        border: 5px solid #fff;
         height: 232px;
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/sk8er-1.png);
-        background-repeat: no-repeat;
+        background: url(../assets/sk8er-1.png);
         background-position: left -100px; }
         .wrapper #skateboarders div.wrap div.steve:last-child {
           margin-right: 0; }
@@ -644,14 +654,8 @@ header {
       display: block;
       margin-right: 2.35765%;
       width: 31.76157%;
-      -webkit-box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
-      -moz-box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
-      box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
-      position: relative;
-      border: 5px solid #fff;
       height: 474px;
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/sk8er-2.png);
-      background-repeat: no-repeat;
+      background: url(../assets/sk8er-2.png);
       background-position: -400px 0; }
       .wrapper #skateboarders div.tommy:last-child {
         margin-right: 0; }
@@ -663,12 +667,31 @@ header {
     -webkit-box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
     -moz-box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
-    padding: 30px;
+    padding: 12px 0 18px 0;
     margin-bottom: 40px; }
     .wrapper #board_design::after {
       clear: both;
       content: "";
       display: table; }
+    .wrapper #board_design .wrap {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-left: 2.84042%; }
+      .wrapper #board_design .wrap:last-child {
+        margin-right: 0; }
+    .wrapper #board_design a {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 7.45162%;
+      transition: opacity 0.4s; }
+      .wrapper #board_design a:last-child {
+        margin-right: 0; }
+      .wrapper #board_design a:hover {
+        transition: opacity 0.4s;
+        opacity: 0.6; }
 
 footer {
   max-width: 1024px;
@@ -678,7 +701,7 @@ footer {
   -webkit-box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
   -moz-box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
-  margin-bottom: 120px;
+  margin-bottom: 95px;
   padding: 30px; }
   footer::after {
     clear: both;
@@ -688,26 +711,82 @@ footer {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 57.35098%; }
+    width: 53.08608%; }
     footer section:last-child {
       margin-right: 0; }
     footer section h3 {
       font-weight: normal;
       font-size: 26px;
-      margin: 5px;
+      margin: 5px 0;
       color: #363732;
       line-height: 25px;
       text-transform: capitalize; }
+    footer section p {
+      line-height: 28px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #848484; }
+    footer section nav.social div {
+      float: left;
+      margin-left: 5px;
+      padding: 4px;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      margin-bottom: 20px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%); }
+      footer section nav.social div a.subs {
+        color: #fff;
+        opacity: 0.2;
+        font-size: 20px;
+        transition: opacity 0.4s; }
+        footer section nav.social div a.subs:hover {
+          transition: opacity 0.4s;
+          opacity: 1; }
+    footer section nav.social .fb {
+      background: #445897; }
+    footer section nav.social .rs {
+      background: #CC8F32; }
+    footer section nav.social .tw {
+      background: #6A8DC7; }
+    footer section nav.social .yt {
+      background: #B2382D; }
+    footer section nav.social div:hover {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%); }
   footer form {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 40.29137%; }
+    width: 44.55627%; }
     footer form:last-child {
       margin-right: 0; }
     footer form input, footer form textarea {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 20px;
+      line-height: 40px;
+      padding: 0 0 0 12px;
       border-top: #fff inset 3px;
       border-left: #fff inset 3px;
       border-bottom: #AFAFAF solid 1px;
       border-right: #AFAFAF solid 1px;
-      resize: none; }
+      resize: none;
+      text-transform: uppercase; }
+    footer form textarea {
+      height: 110px; }
+    footer form button {
+      display: inline-block;
+      float: right;
+      width: 248px;
+      color: #e1e1e1;
+      text-transform: uppercase;
+      border: none;
+      height: 40px;
+      background: #B4292E;
+      transition: color, background-color 0.6s; }
+      footer form button:hover {
+        transition: color, background-color 0.6s;
+        color: #B4292E;
+        background: #fff; }

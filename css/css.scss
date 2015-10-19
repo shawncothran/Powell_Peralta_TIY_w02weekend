@@ -58,7 +58,6 @@ header {
           transition: opacity 0.4s;
 
           &:hover {
-            transition: opacity 0.4s;
             opacity: 1;
           }
         }
@@ -104,7 +103,6 @@ header {
       transition: color, background-color 0.6s;
 
       &:hover {
-        transition: color, background-color 0.6s;
         color: #B4292E;
         background: #fff;
       }
@@ -153,7 +151,6 @@ header {
      transition: background-color 0.6s;
 
      &:hover {
-       transition: background-color 0.6s;
        background-color: #B4292E;
      }
    }
@@ -191,7 +188,6 @@ header {
       text-align: center;
       transition: color, background-color 0.6s;
       &:hover {
-        transition: color, background-color 0.6s;
         color: #fff;
         background-color: #B4292E;
       }
@@ -209,11 +205,49 @@ header {
       line-height: 45px;
       font-size: 47px;
       color: #fff;
+      opacity: 1;
       text-decoration: none;
       text-transform: uppercase;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
+      transition: opacity 0.4s;
+    }
+
+    div.lance, div.rodney, div.steve, div.tommy {
+      @include shadow;
+      position: relative;
+      border: 5px solid #fff;
+      background-repeat: no-repeat;
+      z-index: 10;
+      transition: box-shadow 0.4s, transform 0.4s;
+
+      p {
+        padding: 5px;
+        height: 90px;
+        width: 100%;
+        top: auto;
+        bottom: 0;
+        opacity: 0;
+        line-height: 25px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+        transition: opacity 0.4s;
+      }
+
+      &:hover {
+      transform: translateY(-50px);
+      -webkit-box-shadow: 0px 50px 0px 0px rgba(255,255,255,0.3);
+      -moz-box-shadow: 0px 50px 0px 0px rgba(255,255,255,0.3);
+      box-shadow: 0px 50px 0px 0px rgba(255,255,255,0.3);
+        p {
+          opacity: 1;
+        }
+        a {
+          opacity: 0;
+        }
+      }
     }
 
     div.wrap {
@@ -221,66 +255,31 @@ header {
 
       div.lance {
         @include span-columns(4 of 8);
-        @include shadow;
-        position: relative;
-        border: 5px solid #fff;
         height: 232px;
-        background: linear-gradient(rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.7)), url(../assets/sk8er-4.png);
+        background: url(../assets/sk8er-4.png);
         margin-bottom: 10px;
-        background-repeat: no-repeat;
         background-position: -130px -10px;
-        // transition: background 0.6s;
-        // &:hover {
-        //   transition: background 0.6s;
-        //   background: #B4292E;
-        // }
+
       }
       div.rodney {
         @include span-columns(4 of 8);
-        @include shadow;
         @include omega();
-        position: relative;
-        border: 5px solid #fff;
         height: 232px;
-        background: linear-gradient(rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.7)), url(../assets/sk8er-3.png);
-        background-repeat: no-repeat;
-        // transition: background 0.6s;
-        // &:hover {
-        //   transition: background 0.6s;
-        //   background: #B4292E;
-        // }
+        background: url(../assets/sk8er-3.png);
       }
       div.steve {
         @include span-columns(8 of 8);
-        @include shadow;
         padding: 0 120px;
-        position: relative;
-        border: 5px solid #fff;
         height: 232px;
-        background: linear-gradient(rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.7)), url(../assets/sk8er-1.png);
-        background-repeat: no-repeat;
+        background: url(../assets/sk8er-1.png);
         background-position: left -100px;
-        // transition: background 0.6s;
-        // &:hover {
-        //   transition: background 0.6s;
-        //   background: #B4292E;
-        // }
       }
     }
     div.tommy {
       @include span-columns(4);
-      @include shadow;
-      position: relative;
-      border: 5px solid #fff;
       height: 474px;
-      background: linear-gradient(rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.7)), url(../assets/sk8er-2.png);
-      background-repeat: no-repeat;
+      background: url(../assets/sk8er-2.png);
       background-position: -400px 0;
-      // transition: background 0.6s;
-      // &:hover {
-      //   transition: background 0.6s;
-      //   background: #B4292E;
-      // }
     }
   }
 
@@ -288,9 +287,23 @@ header {
     @include outer-container(1024px);
     background: #fff;
     @include shadow;
-    padding: 30px;
+    padding: 12px 0 18px 0;
     margin-bottom: 40px;
 
+    .wrap {
+      @include span-columns(12);
+      @include shift(.333);
+    }
+
+    a {
+      @include span-columns(1.15);
+      transition: opacity 0.4s;
+
+      &:hover {
+        transition: opacity 0.4s;
+        opacity: 0.6;
+      }
+    }
   }
 }
 
@@ -300,32 +313,110 @@ footer {
   @include outer-container(1024px);
   background: #fff;
   @include shadow;
-  margin-bottom: 120px;
+  margin-bottom: 95px;
   padding: 30px;
+
   section {
-    @include span-columns(7 of 12);
+    @include span-columns(6.5 of 12);
+
     h3 {
       font-weight: normal;
       font-size: 26px;
-      margin: 5px;
+      margin: 5px 0;
       color: #363732;
       line-height: 25px;
       text-transform: capitalize;
     }
+
+    p {
+      line-height: 28px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #848484;
+    }
+
+    nav.social {
+
+      div {
+        float: left;
+        margin-left: 5px;
+        padding: 4px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+
+        a.subs {
+          color: #fff;
+          opacity: 0.2;
+          font-size: 20px;
+          transition: opacity 0.4s;
+
+          &:hover {
+            transition: opacity 0.4s;
+            opacity: 1;
+          }
+        }
+      }
+
+      .fb {
+        background: #445897;
+      }
+      .rs {
+        background: #CC8F32;
+      }
+
+      .tw {
+        background: #6A8DC7;
+      }
+
+      .yt {
+        background: #B2382D;
+      }
+      div:hover {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+      }
+    }
   }
 
   form {
-    @include span-columns(5 of 12);
+    @include span-columns(5.5 of 12);
 
     input, textarea {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 20px;
+      line-height: 40px;
+      padding: 0 0 0 12px;
       border-top: #fff inset 3px;
       border-left: #fff inset 3px;
       border-bottom: #AFAFAF solid 1px;
       border-right: #AFAFAF solid 1px;
       resize: none;
-
+      text-transform: uppercase;
     }
+    textarea {
+      height: 110px;
+    }
+    button {
+      display: inline-block;
+      float: right;
+      width: 248px;
+      color: #e1e1e1;
+      text-transform: uppercase;
+      border: none;
+      height: 40px;
+      background: #B4292E;
+      transition: color, background-color 0.6s;
 
+      &:hover {
+        transition: color, background-color 0.6s;
+        color: #B4292E;
+        background: #fff;
+      }
+    }
   }
-
 }
