@@ -478,7 +478,7 @@ header {
     background: url(../assets/top-image.png);
     background-position: 32% 767px;
     border: 10px solid white;
-    width: 1024px;
+    width: 100%;
     height: 357px;
     position: relative;
     -webkit-box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.3);
@@ -790,3 +790,251 @@ footer {
         transition: color, background-color 0.6s;
         color: #B4292E;
         background: #fff; }
+
+@media (max-width: 1014px) {
+  header nav.social section div {
+    height: 48px;
+    width: 48px;
+    margin-left: 5px;
+    padding: 5px; } }
+
+@media (max-width: 812px) {
+  header {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    header::after {
+      clear: both;
+      content: "";
+      display: table; }
+    header nav.social {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      header nav.social:last-child {
+        margin-right: 0; }
+      header nav.social span {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%; }
+        header nav.social span:last-child {
+          margin-right: 0; }
+      header nav.social section {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        header nav.social section:last-child {
+          margin-right: 0; } }
+
+@media (max-width: 768px) {
+  header {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    header::after {
+      clear: both;
+      content: "";
+      display: table; }
+    header nav.social {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      header nav.social:last-child {
+        margin-right: 0; }
+      header nav.social span {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 57.35098%; }
+        header nav.social span:last-child {
+          margin-right: 0; }
+      header nav.social section {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 40.29137%; }
+        header nav.social section:last-child {
+          margin-right: 0; }
+  .wrapper nav.pagenav a {
+    font-size: 13px; }
+  .wrapper #skateboarders a.sk8r {
+    line-height: 35px;
+    font-size: 37px; }
+  .wrapper #skateboarders div.lance p, .wrapper #skateboarders div.rodney p, .wrapper #skateboarders div.steve p, .wrapper #skateboarders div.tommy p {
+    font-size: 15px;
+    line-height: 14px;
+    font-weight: 600; }
+  .wrapper #skateboarders div.wrap {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .wrapper #skateboarders div.wrap:last-child {
+      margin-right: 0; }
+    .wrapper #skateboarders div.wrap div.lance {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%;
+      margin-left: 29.85432%;
+      margin-bottom: 0px; }
+      .wrapper #skateboarders div.wrap div.lance:last-child {
+        margin-right: 0; }
+      .wrapper #skateboarders div.wrap div.lance:nth-child(n) {
+        margin-right: 0; }
+    .wrapper #skateboarders div.wrap div.rodney {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%;
+      margin-left: 29.85432%; }
+      .wrapper #skateboarders div.wrap div.rodney:last-child {
+        margin-right: 0; }
+      .wrapper #skateboarders div.wrap div.rodney:nth-child(n) {
+        margin-right: 0; }
+    .wrapper #skateboarders div.wrap div.steve {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%;
+      margin-left: 29.85432%;
+      padding: 0; }
+      .wrapper #skateboarders div.wrap div.steve:last-child {
+        margin-right: 0; }
+      .wrapper #skateboarders div.wrap div.steve:nth-child(n) {
+        margin-right: 0; }
+  .wrapper #skateboarders div.tommy {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    margin-left: 29.85432%;
+    height: 232px; }
+    .wrapper #skateboarders div.tommy:last-child {
+      margin-right: 0; }
+    .wrapper #skateboarders div.tommy:nth-child(n) {
+      margin-right: 0; }
+  .wrapper #board_design .wrap {
+    margin-left: 0%; } }
+
+@media (max-width: 570px) {
+  header nav.social span {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    header nav.social span:last-child {
+      margin-right: 0; }
+  header nav.social section {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    header nav.social section:last-child {
+      margin-right: 0; }
+  .wrapper nav.pagenav a {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .wrapper nav.pagenav a:last-child {
+      margin-right: 0; }
+  .wrapper div.heroimg {
+    min-width: 430px; }
+    .wrapper div.heroimg img {
+      position: absolute;
+      top: 50px;
+      left: 0px; }
+  .wrapper article.post {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .wrapper article.post:last-child {
+      margin-right: 0; }
+  .wrapper #skateboarders a.sk8r {
+    line-height: 35px;
+    font-size: 37px; }
+  .wrapper #skateboarders div.lance p, .wrapper #skateboarders div.rodney p, .wrapper #skateboarders div.steve p, .wrapper #skateboarders div.tommy p {
+    font-size: 15px;
+    line-height: 14px;
+    font-weight: 600; }
+  .wrapper #skateboarders div.wrap {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .wrapper #skateboarders div.wrap:last-child {
+      margin-right: 0; }
+    .wrapper #skateboarders div.wrap div.lance {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-left: 17.05961%;
+      margin-bottom: 0px; }
+      .wrapper #skateboarders div.wrap div.lance:last-child {
+        margin-right: 0; }
+    .wrapper #skateboarders div.wrap div.rodney {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-left: 17.05961%; }
+      .wrapper #skateboarders div.wrap div.rodney:last-child {
+        margin-right: 0; }
+    .wrapper #skateboarders div.wrap div.steve {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-left: 17.05961%;
+      padding: 0; }
+      .wrapper #skateboarders div.wrap div.steve:last-child {
+        margin-right: 0; }
+  .wrapper #skateboarders div.tommy {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%;
+    height: 232px; }
+    .wrapper #skateboarders div.tommy:last-child {
+      margin-right: 0; }
+  .wrapper #board_design {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 0 18px 0;
+    margin-bottom: 40px; }
+    .wrapper #board_design::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .wrapper #board_design .wrap {
+      margin-left: 8.5298%; }
+    .wrapper #board_design a {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 14.70196%; }
+      .wrapper #board_design a:last-child {
+        margin-right: 0; }
+  footer section {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    footer section:last-child {
+      margin-right: 0; }
+  footer form {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    footer form:last-child {
+      margin-right: 0; } }
