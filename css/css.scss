@@ -1,0 +1,331 @@
+@import '../bower_components/normalize.css/normalize';
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+// $visual-grid:true;
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+@mixin shadow {
+  -webkit-box-shadow: 0px 4px 0px 0px rgba(255,255,255,0.3);
+  -moz-box-shadow: 0px 4px 0px 0px rgba(255,255,255,0.3);
+  box-shadow: 0px 4px 0px 0px rgba(255,255,255,0.3);
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.5)), url(../assets/bg.jpg);
+  background-size: cover;
+  font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
+}
+
+header {
+  @include outer-container(1024px);
+  margin-top: 6px;
+
+  nav.social {
+    @include span-columns(12);
+
+    span {
+      @include span-columns(8.6);
+      margin-top: 18px;
+      padding-right: 88px;
+      color: #d1d1d1;
+      text-transform: uppercase;
+      line-height: 27px;
+      text-align: right;
+      font-size: 14px;
+      border-right: dotted;
+    }
+
+    section {
+      @include span-columns(3.4);
+
+      div {
+        float: right;
+        margin-left: 10px;
+        padding: 11px;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        @include shadow;
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-left: 0;
+        }
+
+        a.subs {
+          color: #fff;
+          opacity: 0.2;
+          font-size: 35px;
+          transition: opacity 0.4s;
+
+          &:hover {
+            transition: opacity 0.4s;
+            opacity: 1;
+          }
+        }
+      }
+
+      .fb {
+        background: #445897;
+      }
+
+      .rs {
+        background: #CC8F32;
+      }
+
+      .tw {
+        background: #6A8DC7;
+      }
+
+      .yt {
+        background: #B2382D;
+      }
+    }
+  }
+}
+
+.wrapper {
+  @include outer-container(1024px);
+  background: none;
+
+  nav.pagenav {
+   @include span-columns(12);
+
+    a {
+      @include span-columns(3 of 12);
+      @include shadow;
+      margin-bottom: 21px;
+      text-align: center;
+      color: #e1e1e1;
+      background: #B4292E;
+      font-size: 17px;
+      line-height: 40px;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color, background-color 0.6s;
+
+      &:hover {
+        transition: color, background-color 0.6s;
+        color: #B4292E;
+        background: #fff;
+      }
+    }
+  }
+
+  div.heroimg {
+   @include span-columns(12);
+   background: url(../assets/top-image.png);
+   background-position: 32% 767px;
+   border: 10px solid white;
+   width: 1024px;
+   height: 357px;
+   position: relative;
+   @include shadow;
+   margin-bottom: 20px;
+
+   div.grid {
+     background: url(../assets/grid.png);
+     opacity: .4;
+     width: 100%;
+     height: 100%;
+   }
+
+   img {
+     position: absolute;
+     top: 50px;
+     left: 18px;
+   }
+  }
+
+  div.buttons {
+   @include span-columns(12);
+   @include shift(5.47);
+   margin-bottom: 30px;
+
+   button {
+     @include shadow;
+     border-radius: 100%;
+     border: 5px solid #fff;
+     margin: 0 5px;
+     height: 15px;
+     width: 15px;
+     padding: 0;
+     background-color: #fff;
+     transition: background-color 0.6s;
+
+     &:hover {
+       transition: background-color 0.6s;
+       background-color: #B4292E;
+     }
+   }
+  }
+
+  article.post {
+    @include span-columns(4 of 12);
+    background: #fff;
+    padding: 6px 27px 20px 27px;
+    @include shadow;
+    margin-bottom: 40px;
+    h2 {
+      font-weight: 600;
+      font-size: 24px;
+      color: #363732;
+      line-height: 25px;
+    }
+    time {
+      color: #B0B0B0;
+      font-size: 14px;
+    }
+    p {
+      line-height: 25px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #848484;
+    }
+    a {
+      text-transform: uppercase;
+      display: block;
+      color: #B4292E;
+      font-size: 13px;
+      font-weight: bold;
+      text-decoration: none;
+      text-align: center;
+      transition: color, background-color 0.6s;
+      &:hover {
+        transition: color, background-color 0.6s;
+        color: #fff;
+        background-color: #B4292E;
+      }
+    }
+  }
+
+  #skateboarders {
+    @include outer-container(1024px);
+    margin-bottom: 31px;
+
+    a.sk8r {
+      display: inline-block;
+      text-align: center;
+      font-weight: 900;
+      line-height: 45px;
+      font-size: 47px;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    div.wrap {
+      @include span-columns(8);
+
+      div.lance {
+        @include span-columns(4 of 8);
+        @include shadow;
+        position: relative;
+        border: 5px solid #fff;
+        height: 232px;
+        background: linear-gradient(rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.7)), url(../assets/sk8er-4.png);
+        margin-bottom: 10px;
+        background-repeat: no-repeat;
+        background-position: -130px -10px;
+        // transition: background 0.6s;
+        // &:hover {
+        //   transition: background 0.6s;
+        //   background: #B4292E;
+        // }
+      }
+      div.rodney {
+        @include span-columns(4 of 8);
+        @include shadow;
+        @include omega();
+        position: relative;
+        border: 5px solid #fff;
+        height: 232px;
+        background: linear-gradient(rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.7)), url(../assets/sk8er-3.png);
+        background-repeat: no-repeat;
+        // transition: background 0.6s;
+        // &:hover {
+        //   transition: background 0.6s;
+        //   background: #B4292E;
+        // }
+      }
+      div.steve {
+        @include span-columns(8 of 8);
+        @include shadow;
+        padding: 0 120px;
+        position: relative;
+        border: 5px solid #fff;
+        height: 232px;
+        background: linear-gradient(rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.7)), url(../assets/sk8er-1.png);
+        background-repeat: no-repeat;
+        background-position: left -100px;
+        // transition: background 0.6s;
+        // &:hover {
+        //   transition: background 0.6s;
+        //   background: #B4292E;
+        // }
+      }
+    }
+    div.tommy {
+      @include span-columns(4);
+      @include shadow;
+      position: relative;
+      border: 5px solid #fff;
+      height: 474px;
+      background: linear-gradient(rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.7)), url(../assets/sk8er-2.png);
+      background-repeat: no-repeat;
+      background-position: -400px 0;
+      // transition: background 0.6s;
+      // &:hover {
+      //   transition: background 0.6s;
+      //   background: #B4292E;
+      // }
+    }
+  }
+
+  #board_design {
+    @include outer-container(1024px);
+    background: #fff;
+    @include shadow;
+    padding: 30px;
+    margin-bottom: 40px;
+
+  }
+}
+
+
+
+footer {
+  @include outer-container(1024px);
+  background: #fff;
+  @include shadow;
+  margin-bottom: 120px;
+  padding: 30px;
+  section {
+    @include span-columns(7 of 12);
+    h3 {
+      font-weight: normal;
+      font-size: 26px;
+      margin: 5px;
+      color: #363732;
+      line-height: 25px;
+      text-transform: capitalize;
+    }
+  }
+
+  form {
+    @include span-columns(5 of 12);
+
+    input, textarea {
+      border-top: #fff inset 3px;
+      border-left: #fff inset 3px;
+      border-bottom: #AFAFAF solid 1px;
+      border-right: #AFAFAF solid 1px;
+      resize: none;
+
+    }
+
+  }
+
+}
